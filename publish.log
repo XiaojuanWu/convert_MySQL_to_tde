@@ -1,0 +1,73 @@
+---------- signin started at 2016-01-22 16:08:56 ----------
+2016-01-22 16:08:56 : Logging in via: http://p-p3tableaum01.use01.plat.priv/api/2.0/auth/signin
+2016-01-22 16:08:56 : Login payload is
+ <tsRequest><credentials name="Stephen" password="Baseball2" ><site contentUrl="BetaTest2" /></credentials></tsRequest>
+2016-01-22 16:08:56 : HTTP verb is post
+2016-01-22 16:08:56 : Making REST request to Tableau Server using post
+2016-01-22 16:08:56 : Request URI: http://p-p3tableaum01.use01.plat.priv/api/2.0/auth/signin
+2016-01-22 16:08:56 : Request XML:
+<tsRequest><credentials name="Stephen" password="Baseball2" ><site contentUrl="BetaTest2" /></credentials></tsRequest>
+2016-01-22 16:08:57 : Content type from headers: application/xml;charset=utf-8
+2016-01-22 16:08:57 : Raw Response:
+<?xml version='1.0' encoding='UTF-8'?><tsResponse xmlns="http://tableausoftware.com/api" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://tableausoftware.com/api http://tableausoftware.com/api/ts-api-2.0.xsd"><credentials token="n896NaVIxB24d2Crv0Fhv3fK08gN3Jgr"><site id="b0cb5078-83f1-40ec-beed-6404ad228ded" contentUrl="BetaTest2" /><user id="dd4a1427-f47e-4d90-a8af-668a3dbc892b" /></credentials></tsResponse>
+2016-01-22 16:08:57 : XML Object Response: <tsResponse xmlns="http://tableausoftware.com/api" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://tableausoftware.com/api http://tableausoftware.com/api/ts-api-2.0.xsd">
+  <credentials token="n896NaVIxB24d2Crv0Fhv3fK08gN3Jgr">
+    <site id="b0cb5078-83f1-40ec-beed-6404ad228ded" contentUrl="BetaTest2"/>
+    <user id="dd4a1427-f47e-4d90-a8af-668a3dbc892b"/>
+  </credentials>
+</tsResponse>
+
+2016-01-22 16:08:57 : Token is n896NaVIxB24d2Crv0Fhv3fK08gN3Jgr
+2016-01-22 16:08:57 : Site ID is b0cb5078-83f1-40ec-beed-6404ad228ded
+---------- signin ended at 2016-01-22 16:08:57 ------------
+---------- query_project_luid_by_name started at 2016-01-22 16:08:57 ----------
+---------- query_projects started at 2016-01-22 16:08:57 ----------
+---------- query_resource started at 2016-01-22 16:08:57 ----------
+2016-01-22 16:08:57 : Sending get request via: http://p-p3tableaum01.use01.plat.priv/api/2.0/sites/b0cb5078-83f1-40ec-beed-6404ad228ded/projects
+2016-01-22 16:08:57 : HTTP verb is get
+2016-01-22 16:08:57 : Making REST request to Tableau Server using get
+2016-01-22 16:08:57 : Request URI: http://p-p3tableaum01.use01.plat.priv/api/2.0/sites/b0cb5078-83f1-40ec-beed-6404ad228ded/projects?pageNumber=1
+2016-01-22 16:08:57 : Content type from headers: application/xml;charset=utf-8
+2016-01-22 16:08:57 : Raw Response:
+<?xml version="1.0" encoding="UTF-8"?>
+<tsResponse xmlns="http://tableausoftware.com/api" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://tableausoftware.com/api http://tableausoftware.com/api/ts-api-2.0.xsd">
+  <pagination pageNumber="1" pageSize="100" totalAvailable="1"/>
+  <projects>
+    <project id="fbcd7af0-d316-11e4-9022-17ef340c5298" name="default" description="The default project that was automatically created by Tableau."/>
+  </projects>
+</tsResponse>
+
+2016-01-22 16:08:57 : XML Object Response: <tsResponse xmlns="http://tableausoftware.com/api" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://tableausoftware.com/api http://tableausoftware.com/api/ts-api-2.0.xsd">    <project id="fbcd7af0-d316-11e4-9022-17ef340c5298" name="default" description="The default project that was automatically created by Tableau."/></tsResponse>
+
+---------- query_resource ended at 2016-01-22 16:08:57 ------------
+---------- query_projects ended at 2016-01-22 16:08:57 ------------
+---------- query_project_luid_by_name ended at 2016-01-22 16:08:57 ------------
+2016-01-22 16:08:57 : File query-files/LTV_Installs_Day-LTVIns/results.tde is size 0.820282 MBs
+2016-01-22 16:08:57 : Less than 20 MB, uploading as a single call
+---------- send_publish_request started at 2016-01-22 16:08:57 ----------
+2016-01-22 16:08:57 : Sending publish request via: http://p-p3tableaum01.use01.plat.priv/api/2.0/sites/b0cb5078-83f1-40ec-beed-6404ad228ded/datasources?overwrite=true
+2016-01-22 16:08:57 : HTTP verb is post
+2016-01-22 16:08:57 : Making REST request to Tableau Server using post
+2016-01-22 16:08:57 : Request URI: http://p-p3tableaum01.use01.plat.priv/api/2.0/sites/b0cb5078-83f1-40ec-beed-6404ad228ded/datasources?overwrite=true
+2016-01-22 16:09:00 : Content type from headers: application/xml;charset=utf-8
+2016-01-22 16:09:00 : Raw Response:
+<?xml version="1.0" encoding="UTF-8"?>
+<tsResponse xmlns="http://tableausoftware.com/api" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://tableausoftware.com/api http://tableausoftware.com/api/ts-api-2.0.xsd">
+  <datasource id="d6179bc6-ee24-4774-908b-ec4378947b80" name="LTV_Installs_Day-LTVIns" type="dataengine">
+    <project id="fbcd7af0-d316-11e4-9022-17ef340c5298" name="default"/>
+    <owner id="dd4a1427-f47e-4d90-a8af-668a3dbc892b"/>
+    <tags>
+    </tags>
+  </datasource>
+</tsResponse>
+
+2016-01-22 16:09:00 : XML Object Response: <tsResponse xmlns="http://tableausoftware.com/api" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://tableausoftware.com/api http://tableausoftware.com/api/ts-api-2.0.xsd">
+  <datasource id="d6179bc6-ee24-4774-908b-ec4378947b80" name="LTV_Installs_Day-LTVIns" type="dataengine">
+    <project id="fbcd7af0-d316-11e4-9022-17ef340c5298" name="default"/>
+    <owner id="dd4a1427-f47e-4d90-a8af-668a3dbc892b"/>
+    <tags>
+    </tags>
+  </datasource>
+</tsResponse>
+
+---------- send_publish_request ended at 2016-01-22 16:09:00 ------------

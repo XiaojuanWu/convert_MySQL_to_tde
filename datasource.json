@@ -1,0 +1,14 @@
+{
+  "Engagement": [
+    "Basic_Retention_Classic_24hr-BasRetCla_24hr"
+  ],
+  "UA": [
+    "DAU_Revenue-DAURev",
+    "Basic_Clicks_Installs_Engagement-BasCliInsEng"
+  ],
+  "LTV": [
+    "Basic_Retention_Classic_24hr-BasRetCla_24hr",
+    "Basic_Lifetime_Value_Geo-BasLTVGeo-ExecSum",
+    "LTV_Installs_Day-LTVIns"
+  ]
+}
